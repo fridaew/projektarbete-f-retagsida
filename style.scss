@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  $primary-color:#7FA883;
+  $secondary-color:#097B45;
+  $third-color:#8F8F8F;
+  $white-text:#ffff;
+  $black-text:#0000;
+
+  $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+  @mixin flex($direction, $justify, $align) {
+    display:flex;
+    flex-direction:$direction;
+    justify-content: $justify;
+    align-items: $align; }
+
+
+
+@media screen and(max-width:576px) {
+    // #content {
+        
+
+    //     }
+        header {
+            height: 100px;
+            width: 100vw;
+
+         .header {
+           @include flex(row,space-evenly,center);
+           padding-left: 50px;
+           padding-top: 20px;
+         }
+         .logga {
+            height:60%;
+            width: 80%;
+            position: relative;
+
+            
+
+         }
+         .icon {
+            color: black;
+            position: relative;
+            bottom: 50px;
+            left: 400px;
+            display: inline;
+            font-size: large;
+            padding-left: 50px;
+    
+            
+        }
+            
+           
+            nav{
+                @include flex(column, center,center);
+                #myLinks {
+                    display: none;
+                    position: relative;
+                    left: 250px;
+                    bottom: 55px;
+                    padding: 100%;
+                    background-color: #04AA6D;
+                    
+                }   
+            a { color:black;
+                padding: 4px;
+                text-decoration: none;
+                font-size: 10px;
+                display: block;
+            }
+
+           
+          
+        }
+
+        .active {
+        background-color: #04AA6D;
+        }
+    }
+
+                   
+    } 
+    section{
+        @include flex(column, space-around,center);
+        min-height: 5vh;
+        width: 100px;
+    }  
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+
+    .img {
+        width: 600px;
+        height: 400px;
+    }
+
+    .btn {
+        position:absolute;
+        background-color: red;
+        top:50%;
+        left:70%;
+    }
+}
+
+
+
+    article{
+    @include flex (column, center,center);
+    border: solid 3px black;
+    margin-left: 1em;
+    }

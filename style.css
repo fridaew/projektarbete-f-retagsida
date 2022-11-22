@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    height: 100px;
+    width: 100vw;
+  }
+  header .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+  header .logga {
+    height: 60%;
+    width: 80%;
+    position: relative;
+  }
+  header .icon {
+    color: black;
+    position: relative;
+    bottom: 50px;
+    left: 400px;
+    display: inline;
+    font-size: large;
+    padding-left: 50px;
+  }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav #myLinks {
+    display: none;
+    position: relative;
+    left: 250px;
+    bottom: 55px;
+    padding: 100%;
+    background-color: #04AA6D;
+  }
+  header nav a {
+    color: black;
+    padding: 4px;
+    text-decoration: none;
+    font-size: 10px;
+    display: block;
+  }
+  header .active {
+    background-color: #04AA6D;
+  }
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+  width: 100px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.container .img {
+  width: 600px;
+  height: 400px;
+}
+.container .btn {
+  position: absolute;
+  background-color: red;
+  top: 50%;
+  left: 70%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 3px black;
+  margin-left: 1em;
+}/*# sourceMappingURL=style.css.map */
